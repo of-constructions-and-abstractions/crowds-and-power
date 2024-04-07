@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Particle Simulation</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
+</head>
+<body>
+
+  <form id="settings-form">
+    <label for="numParticles">Number of Particles:</label>
+    <input type="number" id="numParticles" name="numParticles" value="200"><br>
+
+    <label for="minDistance">Minimum Distance:</label>
+    <input type="number" id="minDistance" name="minDistance" value="50"><br>
+
+    <label for="spikeInterval">Random Repel Interval:</label>
+    <input type="number" id="spikeInterval" name="spikeInterval" value="2000"><br>
+    
+      <label for="transitionDuration">Aura Transition Duration (animation):</label>
+    <input type="number" id="transitionDuration" name="transitionDuration" step="0.001" value="0.001"><br>
+
+    <label for="bodyTransitionDuration">Body Transition Duration (animation):</label>
+    <input type="number" id="bodyTransitionDuration" name="bodyTransitionDuration" step="0.1" value="0.1"><br>
+
+
+    <button type="submit">Update Settings</button>
+  </form>
+  <div id="sketch-container"></div>
+</body>
+</html>
