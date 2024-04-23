@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <title>Crowd Eruption Simulation</title>
+</head>
+<body>
+    <div id="controls">
+        <label for="numFigures">Number of Figures:</label>
+        <input type="number" id="numFigures" value="200" min="10" max="1000" step="10"><br>
+        
+        <label for="containerSize">Container Size:</label>
+        <input type="number" id="containerSize" value="300" min="100" max="1000" step="10"><br>
+
+        <button onclick="triggerEruption()">Erupt</button>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
