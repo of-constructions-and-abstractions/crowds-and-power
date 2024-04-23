@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+    <meta charset="utf-8" />
+    <title>Crowd Destructiveness Simulation</title>
+    <style>
+        body, html {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #eee;
+        }
+        canvas {
+            border: 1px solid black;
+            margin-top: 40px; /* Adjust as needed */
+        }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <label for="crowdANum">Crowd A Size:</label>
+        <input type="number" id="crowdANum" value="100"><br>
+        <label for="crowdBNum">Crowd B Size:</label>
+        <input type="number" id="crowdBNum" value="100"><br>
+        <button onclick="updateFigures()">Update Crowds</button>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
