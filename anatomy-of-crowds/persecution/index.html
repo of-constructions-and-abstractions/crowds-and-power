@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowd Persecution Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <label for="numNodes">Number of Nodes:</label>
+        <input id="numNodes" type="number" value="20" min="5" max="100">
+
+        <label for="minConnections">Min Connections per Node:</label>
+        <input id="minConnections" type="number" value="1" min="0" max="10">
+
+        <label for="maxConnections">Max Connections per Node:</label>
+        <input id="maxConnections" type="number" value="4" min="1" max="10">
+
+        <label for="persecutionThreshold">Min Connections to Persecute:</label>
+        <input id="persecutionThreshold" type="number" value="3" min="1" max="10">
+
+        <button id="startButton">Start Simulation</button>
+        <button id="persecuteButton">Persecute</button>
+    </div>
+    <button id="persecuteButton" style="display:none;">Persecute</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>
